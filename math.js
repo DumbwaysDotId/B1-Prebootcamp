@@ -19,13 +19,14 @@ console.log(stringArray);
 
 const arrayFullname = fullName.split(" ");
 
-const firstName = arrayFullname.map((name, index) => {
+let firstName = arrayFullname.map((name, index) => {
   if (index !== arrayFullname.length - 1) {
-    return {
-      firstName: name,
-    };
+    return [name];
   }
-})[0];
+});
+
+firstName.pop();
+firstName = firstName.join(" ");
 
 const lastName = arrayFullname.filter(
   (name, index) => index === arrayFullname.length - 1
