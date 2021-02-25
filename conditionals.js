@@ -89,11 +89,13 @@ function checkGaji(data) {
 function lampuMerah(warnaLampu) {
   let statusKendaraan;
 
-  switch (warnaLampu) {
-    case "MERAH":
+  switch (
+    warnaLampu //switch berdasarkan warna lampu
+  ) {
+    case "MERAH": //jika merah kendaraan berhenti
       statusKendaraan = "Kendaraan Berhenti";
       break;
-    case "HIJAU":
+    case "HIJAU": //jika hijau kendaraan berjalan
       statusKendaraan = "Kendaraan Berjalan";
       break;
     default:
@@ -106,12 +108,14 @@ function lampuMerah(warnaLampu) {
   }
 
   return statusKendaraan;
+  //function return status
 }
 
 // console.log(lampuMerah("MERAH"));
 
 function checkExpression(number) {
   if (number == 1) {
+    // komparasi number dengan angka 1
     console.log("ini adalah satu");
   } else {
     console.log("ini bukan satu");
