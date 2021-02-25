@@ -80,6 +80,9 @@ document.write(rest);
 //skipping value
 let info1, info2, info3;
 
+// info1 = "Hallo ini info 1";
+// info2 = "Selamat pagi";
+
 [info1, , info3] = ["Hallo ini info 1", "Selamat pagi", "Selamat malam info 3"];
 
 document.write("<br/>");
@@ -92,6 +95,9 @@ document.write(info3);
 //swapping values
 let right = "kanan";
 let left = "kiri";
+
+// right = "kiri"
+// left = "kanan"
 
 [right, left] = [left, right];
 
