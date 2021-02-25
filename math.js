@@ -25,7 +25,10 @@ let firstName = arrayFullname.map((name, index) => {
   }
 });
 
-firstName.pop();
+if (firstName.length > 1) {
+  firstName.pop();
+}
+
 firstName = firstName.join(" ");
 
 const lastName = arrayFullname.filter(
