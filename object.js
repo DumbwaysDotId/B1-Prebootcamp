@@ -28,6 +28,7 @@ const object = {
   ],
   greeting: function () {
     const newVariable = "hallo";
+
     alert(global + newVariable + this.name + this.age);
   },
 };
